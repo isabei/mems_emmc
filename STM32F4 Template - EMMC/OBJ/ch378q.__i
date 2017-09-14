@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\USER -I..\CORE -I..\FWLIB\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\SYSTEM\fsmc -I..\SYSTEM\i2c+i2s -I..\SYSTEM\sram -I..\SYSTEM\led
+-I "F:\STM32F4 Template - EMMC\USER\RTE"
+-I E:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-I E:\MDK\ARM\CMSIS\Include
+-D__UVISION_VERSION="515" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99
+-o ..\obj\ch378q.o --omf_browse ..\obj\ch378q.crf --depend ..\obj\ch378q.d "..\SYSTEM\usb\ch378q.c"
